@@ -35,7 +35,7 @@ class AdaBoostClassifier:
         for m in range(self.n_weakers_limit):
             weights_of_samples = self.weights_of_samples.reshape(X.shape[0])
             
-            new_weak_classifier = self.weak_classifier(max_depth=max_depth, splitter="random", random_state=1)
+            new_weak_classifier = self.weak_classifier(max_depth=max_depth, random_state=1)
             new_weak_classifier.fit(X,y, sample_weight=weights_of_samples)
             self.classifiers.append(new_weak_classifier)
             
