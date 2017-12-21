@@ -1,0 +1,7 @@
+             precision    recall  f1-score   support
+
+    nonface       0.99      0.97      0.98       149
+       face       0.97      0.99      0.98       151
+
+avg / total       0.98      0.98      0.98       300
+
